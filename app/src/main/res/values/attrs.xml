@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShineTextView">
+        <attr name="outerShadowColor" format="color" /><!--外发光颜色-->
+        <attr name="outerShadowRadius" format="float" />
+        <attr name="outerShadowDx" format="float" />
+        <attr name="outerShadowDy" format="float" />
+        <attr name="bgShadowColor" format="color" /><!--bo-->
+        <attr name="bgShadowRadius" format="float" />
+        <attr name="bgShadowDx" format="float" />
+        <attr name="bgShadowDy" format="float" />
+    </declare-styleable>
+    <declare-styleable name="WaveView">
+        <attr name="wvType" format="enum">
+            <enum name="centerLine" value="0" />
+            <enum name="single" value="1" />
+        </attr>
+        <attr name="wvCenterLineColor" format="color" />
+        <attr name="wvCenterLineWidth" format="dimension" />
+        <attr name="wvLineColor" format="color" />
+        <attr name="wvLineWidth" format="dimension" />
+        <attr name="wvLineSpace" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckView">
+        <attr name="uncheck_color" format="color" /> <!--选中后的基调颜色-->
+        <attr name="check_color" format="color" /> <!--选中后钩的颜色-->
+        <attr name="check_right_color" format="color" /> <!--圆的半径-->
+        <attr name="radius_size" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleProgress">
+        <attr name="color1" format="reference|color" />
+        <attr name="color2" format="reference|color" />
+        <attr name="color3" format="reference|color" />
+    </declare-styleable>
+    <declare-styleable name="XTabLayout">
+        <attr name="xTabIndicatorHeight" format="dimension" />
+        <attr name="xTabIndicatorWidth" format="dimension" />
+        <attr name="xTabIndicatorColor" format="color" />
+        <attr name="xTabPadding" format="dimension" />
+        <attr name="xTabPaddingStart" format="dimension" />
+        <attr name="xTabPaddingTop" format="dimension" />
+        <attr name="xTabPaddingEnd" format="dimension" />
+        <attr name="xTabPaddingBottom" format="dimension" />
+        <attr name="xTabTextAppearance" format="reference" />
+        <attr name="xTabTextColor" format="color" />
+        <attr name="xTabSelectedTextColor" format="color" />
+        <attr name="xTabMinWidth" format="dimension" />
+        <attr name="xTabMaxWidth" format="dimension" />
+        <attr name="xTabBackgroundColor" format="reference|color" />
+        <attr name="xTabSelectedBackgroundColor" format="reference|color" />
+        <attr name="xTabContentStart" format="dimension" />
+        <attr name="xTabMode">
+            <enum name="scrollable" value="0x00000000" />
+            <enum name="fixed" value="0x00000001" />
+        </attr>
+        <attr name="xTabGravity" format="integer" />
+        <attr name="xTabTextSize" format="dimension" />
+        <attr name="xTabSelectedTextSize" format="dimension" />
+        <attr name="xTabDisplayNum" format="integer" />
+    </declare-styleable>
+
+    <!-- Textview两端对齐的自定义属性-->
+    <declare-styleable name="AlignTextView"> <!-- 文本-->
+        <attr name="text" format="string" /> <!-- 后缀符号类型:全角、半角-->
+        <attr name="suffixMode" format="enum">
+            <enum name="full_width" value="1" />
+            <enum name="half_width" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

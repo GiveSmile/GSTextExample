@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.hs.administrator.test.widget.ShineTextView
+                android:id="@+id/tv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="@string/testText"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <com.hs.administrator.test.widget.ShineTextView
+                android:id="@+id/tv_2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="图片圆角"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <com.hs.administrator.test.widget.ShineTextView
+                android:id="@+id/tv_3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="模仿淘宝评价分类"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <com.hs.administrator.test.widget.AlignTextView
+                android:id="@+id/tv_4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:textColor="#444444"
+                android:textSize="15sp"
+                app:suffixMode="full_width"
+                app:text="拨打电话（适配到7.0）:" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="监听物理返回键以及防止按钮连续点击事件以及字体荧光和 获取当前日期与时间"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv_6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="点击移动动画"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv_7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="拍照"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv_8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="点击展开"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv_rxbus"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="RxBus"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv_toast"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="自定义Toast"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv_flash"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="柱状音波图"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv_test_greendao"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="使用greendao增删改查"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv_test_login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="登录记住密码--数据库"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+
+            <TextView
+                android:id="@+id/tv_test_login_two"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="登录记住密码--缓存"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv_dagou"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="打钩动画"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv_dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="dp-px 相互转换"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="俩个加载dialog"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="点击展开效果"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="跳往unity3D模块"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv12"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="测试本地socket通信"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv13"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="服务初体验"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv14"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="使用系统自带的分享功能"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv15"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="百度地图将持续为您导航"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv16"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="跳动的文本"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv17"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="适配（附带从配置文件xml里面获取内容）"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv18"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="下载"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv19"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="初探自定义View"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv20"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="生命周期"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv21"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="反射的基本使用"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+
+            <TextView
+                android:id="@+id/tv22"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:text="约束布局的使用"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f8f8f8" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

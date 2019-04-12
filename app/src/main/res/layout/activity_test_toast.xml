@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/but_toast_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="自定义Toast"
+        android:textColor="#222222"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="-----------just color-----------" />
+
+    <Button
+        android:id="@+id/toast_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="toast_normal" />
+
+    <Button
+        android:id="@+id/toast_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="toast_success" />
+
+    <Button
+        android:id="@+id/toast_warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="toast_warning" />
+
+    <Button
+        android:id="@+id/toast_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="toast_error" />
+
+    <Button
+        android:id="@+id/toast_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="toast_info" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="-----------anim-----------" />
+
+    <Button
+        android:id="@+id/toast_anim_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="toast_anim_success" />
+
+    <Button
+        android:id="@+id/toast_anim_warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="toast_anim_warning" />
+
+    <Button
+        android:id="@+id/toast_anim_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="toast_anim_error" />
+
+    <Button
+        android:id="@+id/toast_anim_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="toast_anim_info" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="-----------custom-----------" />
+
+    <Button
+        android:id="@+id/toast_custom_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="toast_custom_logo" />
+
+    <Button
+        android:id="@+id/toast_custom_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="toast_custom_text" />
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hs.administrator.test.view.activity.Main6Activity">
+
+
+    <RadioGroup
+        android:id="@+id/mRg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/mRb_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/main6_drawable"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="商城"
+            android:textColor="@drawable/main6_textcolor" />
+
+        <RadioButton
+            android:id="@+id/mRb_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/main6_drawable"
+            android:button="@null"
+            android:padding="15dp"
+            android:text="分类"
+            android:textColor="@drawable/main6_textcolor" />
+
+        <RadioButton
+            android:id="@+id/mRb_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/main6_drawable"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="消息"
+            android:textColor="@drawable/main6_textcolor" />
+
+        <RadioButton
+            android:id="@+id/mRb_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/main6_drawable"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="购物车"
+            android:textColor="@drawable/main6_textcolor" />
+
+        <RadioButton
+            android:id="@+id/mRb_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/main6_drawable"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="我的"
+            android:textColor="@drawable/main6_textcolor" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/check_but"
+        android:text="点击移动"
+        android:textSize="10sp" />
+
+    <com.hs.administrator.test.widget.WaveView
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.hs.administrator.test.picker.AutoScrollViewPager
+            android:id="@+id/testAutoScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

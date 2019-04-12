@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--自定义dialog背景全透明无边框theme -->
+    <!--<style name="dialog_logout" parent="android:style/Theme.Holo.DialogWhenLarge">-->
+        <!--&lt;!&ndash;背景颜色及和透明程度&ndash;&gt;-->
+        <!--//<item name="android:windowBackground">@color/dialog_bg</item>-->
+        <!--&lt;!&ndash;是否去除标题 &ndash;&gt;-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--&lt;!&ndash;是否去除边框&ndash;&gt;-->
+        <!--<item name="android:windowFrame">@null</item>-->
+        <!--&lt;!&ndash;是否浮现在activity之上&ndash;&gt;-->
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <!--&lt;!&ndash;是否模糊&ndash;&gt;-->
+        <!--<item name="android:backgroundDimEnabled">false</item>-->
+        <!--&lt;!&ndash; 半透明 &ndash;&gt;-->
+        <!--<item name="android:windowIsTranslucent">false</item>-->
+        <!--&lt;!&ndash;点击空白消失&ndash;&gt;-->
+        <!--<item name="android:windowCloseOnTouchOutside">true</item>-->
+    <!--</style>-->
+
+
+    <style name="business_identity_authentication_textview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#AAE6FF</item>
+    </style>
+
+    <style name="business_identity_authentication">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#AAE6FF</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <style name="TextAppearance.DemoText" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">#BB000000</item>
+    </style>
+    <!-- 自定义样式的name属性用于引用，父亲是默认的style -->
+    <style name="InitProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <!-- 最大高度50dp，最小高度10dp，进度值确定，Drawable样式文件引用 -->
+        <item name="android:maxHeight">50dp</item>
+        <item name="android:minHeight">10dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/progressbar_style</item>
+    </style>
+
+    <style name="custom_dialog_style" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item><!--除去title-->
+        <item name="android:backgroundDimEnabled">true</item><!--半透明-->
+        <item name="android:windowBackground">@color/transparent</item><!--除去背景色-->
+        <item name="android:radius">10dp</item>
+    </style>
+    <style name="piano_effects_pop_button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+</resources>

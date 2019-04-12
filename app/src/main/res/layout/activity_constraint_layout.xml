@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/but_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是钢铁侠" />
+
+    <Button
+        android:id="@+id/but_two"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="蜘蛛侠"
+        app:layout_constraintLeft_toRightOf="@+id/but_one" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="擎天柱"
+        app:layout_constraintBaseline_toBaselineOf="@+id/but_two"
+        app:layout_constraintLeft_toRightOf="@+id/but_two" />
+
+    <Button
+        android:id="@+id/but_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="黑寡妇"
+        app:layout_constraintTop_toBottomOf="@+id/but_one" />
+
+    <Button
+        android:id="@+id/sever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="美国队长"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_six" />
+
+    <Button
+        android:id="@+id/but_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="緑巨人"
+        app:layout_constraintLeft_toRightOf="@+id/but_three"
+        app:layout_constraintTop_toBottomOf="@+id/but_three"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/but_six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="惊奇队长"
+        app:layout_constraintCircle="@id/but_five"
+        app:layout_constraintCircleAngle="110"
+        app:layout_constraintCircleRadius="100dp" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="小方块"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sever" />
+
+
+</android.support.constraint.ConstraintLayout>

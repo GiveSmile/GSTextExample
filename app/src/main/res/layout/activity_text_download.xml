@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#222222"
+    android:layout_height="match_parent">
+    <com.hs.hstechsdklibrary.xtablayout.XTabLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <Button
+        android:id="@+id/et_status"
+        android:hint="点击开始下载 强制性更新"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/but_down"
+        android:text="点击开始下载"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

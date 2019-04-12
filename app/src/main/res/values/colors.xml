@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tick_gray">#f8f8f8</color>
+    <color name="tick_yellow">#FFFFFC40</color>
+    <color name="tick_white">#FFFFFf</color>
+    <color name="searcg_tv_nor">#666666</color>
+    <color name="app_bg">#F8F8F8</color>
+    <color name="bg">#75000000</color>
+    <color name="dialog_bg">#00000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hs.administrator.test.view.activity.Main5Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <com.hs.administrator.test.widget.ShineTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/main5_drawable"
+            android:gravity="center"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Glowing Text"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            app:bgShadowColor="#ef0f0f"
+            app:bgShadowDy="1"
+            app:bgShadowRadius="12"
+            app:outerShadowColor="#cc2b88f6"
+            app:outerShadowDy="1"
+            app:outerShadowRadius="12" />
+
+        <TextView
+            android:id="@+id/tv_test_shine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/but"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:shadowColor="#ffffff"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="12"
+            android:text="Glowing Text"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.hs.administrator.test.widget.CustomHanTextView
+                android:id="@+id/tv_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Glowing Text"
+                android:textColor="#ffffffff"
+                android:bufferType="spannable"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+        <com.hs.administrator.test.widget.CustomHanTextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="dsafasdfasdfa"/>
+
+    <com.hs.hstechsdklibrary.xtablayout.XTabLayout
+            android:id="@+id/test_XTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="#ffffff"
+            app:xTabDisplayNum="2"
+            app:xTabIndicatorColor="#ff464e"
+            app:xTabIndicatorHeight="2dp"
+            app:xTabIndicatorWidth="45dp"
+            app:xTabMode="fixed"
+            app:xTabSelectedTextColor="#ff464e"
+      />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/mVp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>

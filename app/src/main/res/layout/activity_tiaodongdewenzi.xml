@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="我是第一条文本"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/jumping_text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="我是第二条文本点击该文本直接把媒体音量会调到最大"
+        android:textAppearance="@style/TextAppearance.DemoText"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/jumping_text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是第三条文本"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <!-- This TextView has 8dp of top padding to avoid clipping the ascenders
+         of the first word when animating - also, the TextView above this doesn't
+         have any margin, to create the same spacing that we have between the
+         first couple of TextViews. -->
+    <TextView
+        android:id="@+id/jumping_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="我是第四条文本 "
+        android:textAppearance="@style/TextAppearance.DemoText" />
+
+</LinearLayout>

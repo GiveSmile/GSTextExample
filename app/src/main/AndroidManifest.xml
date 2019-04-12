@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hs.administrator.test">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    //读取设备硬件信息，统计数据
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    //允许sd卡写权限，需写入地图数据，禁用后无法显示地图
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    //使用步行AR导航，配置Camera权限
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- 存储权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 监听wifi -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 华为角标的权限 -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <application
+        android:name=".TestApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.yanbin.android7.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity android:name=".view.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="gp4t9hq4TrTNMaGCn3S7tpwqyFHF97wO" />
+
+        <activity android:name=".view.activity.Main2Activity" />
+        <activity android:name=".view.activity.SplashActivity" />
+        <activity android:name=".view.activity.Main3Activity" />
+        <activity android:name=".view.activity.Main4Activity" />
+        <activity android:name=".view.activity.PlayPhoneActivity" />
+        <activity android:name=".view.activity.Main5Activity" />
+        <activity android:name=".view.activity.Main6Activity" />
+        <activity android:name=".view.activity.Main7Activity" />
+        <activity android:name=".view.activity.ExpandableListActivity" />
+        <activity android:name=".view.activity.RxBusActivity" />
+        <activity android:name=".view.activity.TestRxbusActivity" />
+        <activity android:name=".view.activity.TestToastActivity" />
+        <activity android:name=".view.activity.FlashActivity" />
+        <activity android:name=".view.activity.TestGreenDaoActivity" />
+        <activity android:name=".view.activity.TestLoginActivity" />
+        <activity android:name=".view.activity.LoginTwoActivity" />
+        <activity android:name=".view.activity.ActivityAnimation" />
+        <activity android:name=".view.activity.TestDpActivity" />
+        <activity android:name=".videoplayer.FullScreenActivity" />
+        <activity
+            android:name="com.videoplayer.JavaActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.videoplayer.VideoPlayerActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+        <activity android:name=".view.activity.DialogActivity" />
+        <activity android:name=".view.activity.dianjizhankaiActivity" />
+        <activity android:name=".view.activity.huidiaojiemianActivity" />
+        <activity android:name=".view.activity.SurfaceActivity" />
+        <activity android:name=".view.activity.TestFriendListActivity" />
+        <activity android:name=".view.activity.TestSocketActivity" />
+        <activity android:name=".view.activity.UnityActivity" />
+        <activity android:name=".view.activity.SocketActivity" />
+        <activity android:name=".view.activity.TestServiceActivity" />
+
+        <service android:name=".utils.service.MyService" />
+
+        <activity android:name=".view.activity.ShareTestActivity" />
+        <activity android:name=".view.activity.baidumapActivity" />
+        <activity android:name=".view.activity.tiaodongdewenziActivity" />
+        <activity android:name=".view.activity.MyOneLineActivity" />
+        <activity android:name=".view.activity.AndroidSizeActivity" />
+        <activity android:name=".view.activity.ConstraintLayoutActivity" />
+        <activity
+            android:name=".view.activity.MusicModeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640" />
+        <meta-data
+            android:name="test"
+            android:value="我自横刀向天笑" />
+
+        <receiver
+            android:name=".BroadcastReceiver.NetStateReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".view.activity.TestDownloadActivity" />
+        <activity android:name=".view.activity.YBViewActivity" />
+        <activity android:name=".view.activity.LifecycleOneActivity" />
+        <activity android:name=".view.activity.LifecycleTwoActivity" />
+        <activity android:name=".view.activity.ReflectActivity" />
+        <activity android:name=".view.activity.DSBridgeActivity"></activity>
+    </application>
+
+</manifest>

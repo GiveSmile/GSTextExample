@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hs.administrator.test.widget.LabelFlowLayout
+        android:id="@+id/flow_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tv_open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#f8f8f8"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:text="展开" />
+
+    <com.ghy.ui.GeneralEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/classify_radogroup"
+        android:hint="光标颜色和字体颜色一致"
+        app:textCursorDrawable="@null" />
+
+    <com.ghy.ui.GeneralEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:hint="无光标无背景颜色设置" />
+
+    <com.ghy.ui.GeneralEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/classify_radogroup"
+        android:hint="有背景无光标设置" />
+
+    <com.ghy.ui.GeneralEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/classify_radogroup"
+        android:hint="有背景有光标设置"
+        app:textCursorDrawable="@drawable/edittext_cursor" />
+
+    <TextView
+        android:id="@+id/play"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="点击播放声音"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/Rl_box"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@mipmap/box">
+
+            <ImageView
+                android:id="@+id/iv_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/line" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_shuru"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="请输入要转换为语音的文字" />
+
+            <TextView
+                android:id="@+id/play_voice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="生成语音文件并进行播放"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

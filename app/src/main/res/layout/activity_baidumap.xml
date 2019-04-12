@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/text_map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/but_oneType"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="普通地图"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/but_twoType"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="卫星地图"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/but_threeType"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="空白地图"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/but_fourType"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="实时路况图"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/but_fiveType"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="城市热力图"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:circleprogress="http://schemas.android.com/apk/res-auto">
+    <com.hs.administrator.test.widget.CircleProgress
+        android:id="@+id/progress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        circleprogress:color1="@android:color/holo_red_light"
+        circleprogress:color2="@android:color/holo_green_light"
+        circleprogress:color3="@android:color/holo_blue_light"/>
+
+    <TextView
+        android:id="@+id/loadingTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/progress"
+        android:text="正在加载中.."
+        android:textSize="15sp"/>
+</RelativeLayout>

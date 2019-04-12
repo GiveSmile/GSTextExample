@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_gson"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:shadowColor="#ff000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:text="显示"
+        android:textColor="#444444"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="我是第一个小布局"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="第二种隐藏控件动画"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_gson_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#000000"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/iv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="1"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textColor="#ff464e"
+        android:background="@mipmap/recognition_countdown" />
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/recognition_countdown" />
+
+    <ImageView
+        android:id="@+id/iv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/recognition_countdown" />
+
+    <ImageView
+        android:id="@+id/iv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/recognition_countdown" />
+    <com.hs.administrator.test.utils.PointWaitBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/mIvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_drawable"/>
+
+    <com.hs.hstechsdklibrary.widget.MyOneLineView
+        android:id="@+id/one_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

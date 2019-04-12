@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/music_pop_bg"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:background="@drawable/piano_song_list_background"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/music_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/birthday_song"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:textAllCaps="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/music_star"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/little_star"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:textAllCaps="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/music_happy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="10dp"
+            android:text="@string/ode_to_joy"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</FrameLayout>

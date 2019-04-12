@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/music_pop_bg"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"></FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/connection"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/connection" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/disconnection"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/disconnection" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/buttonPushed"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/buttonPushed" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/mode1"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/mode1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/mode2"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/mode2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/mode3"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/mode3" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/surprise"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/surprise" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/OhOoh"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/OhOoh" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/OhOoh2"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/OhOoh2" />
+
+
+            <!-- </LinearLayout> -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/cuddly"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/cuddly" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/sleeping"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/sleeping" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/happy"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/happy" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/superHappy"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/superHappy" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/happy_short"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/happy_short" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/sad"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/sad" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/confused"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/confused" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/fart1"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/fart1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+
+            <Button
+                android:id="@+id/fart2"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/fart2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/fart3"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/fart3" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/didi"
+                style="@style/piano_effects_pop_button_style"
+                android:text="@string/didi" />
+
+            <Button
+                android:layout_width="100sp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="@string/didi"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

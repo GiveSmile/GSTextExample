@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.hs.administrator.test.widget.WaveView
+        android:id="@+id/waveView"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="100dp"
+        android:background="#999"
+        app:wvType="single"
+        app:wvCenterLineColor="#f0f"
+        app:wvCenterLineWidth="1dp"
+        app:wvLineColor="#ff0"
+        app:wvLineWidth="1dp"
+        app:wvLineSpace="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Send" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_receive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

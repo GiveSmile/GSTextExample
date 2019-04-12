@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hs.administrator.test.view.activity.TestServiceActivity">
+
+    <Button
+        android:id="@+id/but_statr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="statr_service" />
+
+    <Button
+        android:id="@+id/but_stop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="stop_service" />
+
+    <Button
+        android:id="@+id/but_bind"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Bind_service" />
+
+    <Button
+        android:id="@+id/but_unbind"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="unbind_service" />
+</LinearLayout>
