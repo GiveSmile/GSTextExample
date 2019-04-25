@@ -129,8 +129,10 @@
         <activity android:name=".view.activity.YBViewActivity" />
         <activity android:name=".view.activity.LifecycleOneActivity" />
         <activity android:name=".view.activity.LifecycleTwoActivity" />
-        <activity android:name=".view.activity.ReflectActivity" />
-        <activity android:name=".view.activity.DSBridgeActivity"></activity>
+        <activity android:name=".view.activity.RecycleViewActivity" />
+        <activity android:name=".view.activity.DSBridgeActivity" />
+        <activity android:name=".view.activity.WeChatActivity" />
+        <activity android:name=".view.activity.GoodsActivity"></activity>
     </application>
 
 </manifest>

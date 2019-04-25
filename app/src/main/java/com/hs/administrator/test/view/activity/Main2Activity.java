@@ -24,6 +24,7 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.hs.administrator.test.R;
 import com.hs.administrator.test.model.TestRBBean;
@@ -32,7 +33,10 @@ import com.hs.hstechsdklibrary.commonutil.LogUtil;
 import com.hs.hstechsdklibrary.widget.MyOneLineView;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -63,6 +67,9 @@ public class Main2Activity extends AppCompatActivity {
     //animationList的ID
     private int mResid;
 
+    private List<String> data = new ArrayList<>();
+    private HashMap<Object, Object> textHashMao = new HashMap<>();
+
     private AnimationDrawable animationDrawable;
 
     private boolean isGson = true;
@@ -74,6 +81,15 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         ButterKnife.bind(this);
+        textHashMao.put(1, "one");
+        textHashMao.put(2, "two");
+        textHashMao.put(3, "three");
+        textHashMao.put(4, "four");
+        textHashMao.put(4, "four");
+        textHashMao.put(5, "five");
+        textHashMao.put(5, "five");
+        textHashMao.put(5, "five");
+        textHashMao.put(5, "five");
         initData();
         //   mIvLogin.setImageResource(mResid);
         //     animationDrawable = (AnimationDrawable) mIvLogin.getBackground();
@@ -83,6 +99,28 @@ public class Main2Activity extends AppCompatActivity {
                 animationDrawable.start();
             }
         });*/
+
+        mOneLine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String context = "";
+                Set<Object> set = textHashMao.keySet();
+                Iterator<Object> iterator = set.iterator();
+                while (iterator.hasNext()) {
+                    data.add(iterator.next() + "");
+                }
+                for (int i = 0; i < data.size(); i++) {
+                    if (i == data.size() - 1) {
+                        context = context + data.get(i);
+                    } else {
+                        context = context + data.get(i) + ",";
+                    }
+
+                }
+                Log.d("testHashmap==", context);
+                textHashMao.clear();
+            }
+        });
 
         mOneLine.initMine(R.mipmap.icon_mark2, "测试文本", "", "", true);
 

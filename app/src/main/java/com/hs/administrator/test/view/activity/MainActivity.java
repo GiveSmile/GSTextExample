@@ -4,7 +4,6 @@ import android.Manifest;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
@@ -13,31 +12,23 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.anye.greendao.gen.LoginBeanDao;
 import com.didi.virtualapk.PluginManager;
-import com.didi.virtualapk.internal.LoadedPlugin;
-import com.didi.virtualapk.internal.PluginContentResolver;
 import com.hs.administrator.test.R;
-import com.hs.administrator.test.TestBaseActivity;
 import com.hs.administrator.test.testObserver.Bee;
 import com.hs.administrator.test.testObserver.Flower;
 import com.hs.administrator.test.testObserver.Insect;
 import com.hs.administrator.test.testObserver.Plant;
 import com.hs.administrator.test.widget.AlignTextView;
 import com.hs.administrator.test.widget.ShineTextView;
-import com.hs.hstechsdklibrary.commonutil.ExitActivityUtil;
 import com.tencent.stat.StatService;
 import com.videoplayer.JavaActivity;
 import com.videoplayer.UrlInfo;
 import com.videoplayer.UrlInfoService;
-
-import junit.framework.Test;
 
 import java.io.File;
 import java.util.Properties;
@@ -366,16 +357,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                final String pkg = "com.huashitech.mvvmplug";
-                if (PluginManager.getInstance(MainActivity.this).getLoadedPlugin(pkg) == null) {
-                    Toast.makeText(MainActivity.this, "plugin [com.didi.virtualapk.demo] not loaded", Toast.LENGTH_SHORT).show();
-                    return;
-                }
 
                 // test Activity and Service
-                Intent intent = new Intent();
-                intent.setClassName(MainActivity.this, "com.huashitech.mvvmplug.PlugActivity");
-                startActivity(intent);
+
 
                 // test ContentProvider
 //                Uri bookUri = Uri.parse("content://com.didi.virtualapk.demo.book.provider/book");
@@ -393,8 +377,8 @@ public class MainActivity extends AppCompatActivity {
 //                }
 
 
-                //   startActivity(new Intent(MainActivity.this, ReflectActivity.class));
-//                Intent intent = new Intent();
+                startActivity(new Intent(MainActivity.this, RecycleViewActivity.class));
+                //Intent intent = new Intent();
 //                intent.setClassName("com.huashitech.mvvmplug", "com.huashitech.mvvmplug.MainActivity");
 //                startActivity(intent);
             }
@@ -402,7 +386,7 @@ public class MainActivity extends AppCompatActivity {
         mTv22.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, MusicModeActivity.class));
+                startActivity(new Intent(MainActivity.this, ConstraintLayoutActivity.class));
             }
         });
 

@@ -64,6 +64,10 @@ android {
     }
 
 
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
 }
 //添加arr依赖
 repositories {
@@ -168,9 +172,9 @@ dependencies {
 
     //    implementation 'com.github.xuexiangjys:XUpdate:1.0.6'
     implementation 'com.didi.virtualapk:core:0.9.8'
-
+    implementation 'com.github.whytot:BadgeForAppIcon:v1.0.0-beta.2'
     //DSBridge  X5分支
 
     // implementation 'com.github.wendux:DSBridge-Android:x5-3.0-SNAPSHOT'
-  //  implementation project(':dsbridge')
+    //  implementation project(':dsbridge')
 }

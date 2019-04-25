@@ -104,19 +104,18 @@ public class Main6Activity extends AppCompatActivity implements AsyncImageLoader
         BaseViewPagerAdapter<String> adapter = new BaseViewPagerAdapter<String>(Main6Activity.this) {
             @Override
             public void loadImage(final ImageView imageView, int i, String s) {
-//                ImageLoaderUtils.displaySmallPhoto(Main6Activity.this, imageView, R.mipmap.ic_launcher, R.mipmap.ic_launcher, s);
+                ImageLoaderUtils.displaySmallPhoto(Main6Activity.this, imageView, R.mipmap.ic_launcher, R.mipmap.ic_launcher, s);
 //                AsyncImageLoader.loadRawDataFromURL(s);
 //                AsyncImageLoader.loadBitmapFromURL(s);
-                //asyncImageLoader.asyncSetImageBitmap(s,imageView);
-                asyncImageLoader.download(s, new AsyncImageLoader.ImageLoadedListener() {
-                    @Override
-                    public void imageLoaded(Bitmap bitmap) {
-
-                        imageView.setImageBitmap(bitmap);
-                    }
-                });
-
-                //  Glide.with(AdvertisingActivity.this).load(s).asBitmap().diskCacheStrategy(DiskCacheStrategy.ALL).placeholder(R.drawable.ic_image_loading).error(R.drawable.ic_empty_picture).thumbnail(0.5F).into(imageView);
+//                asyncImageLoader.asyncSetImageBitmap(s,imageView);
+//                asyncImageLoader.download(s, new AsyncImageLoader.ImageLoadedListener() {
+//                    @Override
+//                    public void imageLoaded(Bitmap bitmap) {
+//
+//                        imageView.setImageBitmap(bitmap);
+//                    }
+//                });
+//           Glide.with(AdvertisingActivity.this).load(s).asBitmap().diskCacheStrategy(DiskCacheStrategy.ALL).placeholder(R.drawable.ic_image_loading).error(R.drawable.ic_empty_picture).thumbnail(0.5F).into(imageView);
             }
         };
         mViewParger.setAdapter(adapter);

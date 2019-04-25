@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.RecyclerView
-    android:id="@+id/mRv"
+    android:id="@+id/mRv_Goods"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hs.administrator.test.view.activity.RecycleViewActivity">
+    tools:context="com.hs.administrator.test.view.activity.GoodsActivity">
 
 </android.support.v7.widget.RecyclerView>
