@@ -4,6 +4,9 @@ import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 
+import com.google.ar.core.ArCoreApk;
+import com.google.ar.core.Session;
+import com.hs.administrator.test.model.MsgBean;
 import com.hs.hstechsdklibrary.autosize.AutoSizeConfig;
 import com.hs.hstechsdklibrary.commonutil.Utils;
 import com.tencent.stat.StatConfig;
@@ -23,7 +26,6 @@ import java.lang.reflect.Method;
 public class TestApp extends Application {
     private static TestApp instance;
 
-
     public static TestApp getInstance() {
         return instance;
     }
@@ -33,6 +35,7 @@ public class TestApp extends Application {
         super.onCreate();
         closeAndroidPDialog();
         instance = this;
+
         Utils.init(instance);
         Utils.initLogUtils(true);
         AutoSizeConfig.getInstance()

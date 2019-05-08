@@ -11,6 +11,9 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- 打电话的权限 -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -124,6 +127,10 @@
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
+        <!-- //添加AR选项，在启动应用时会判断是否安装了ARCore -->
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
 
         <activity android:name=".view.activity.TestDownloadActivity" />
         <activity android:name=".view.activity.YBViewActivity" />
@@ -132,7 +139,8 @@
         <activity android:name=".view.activity.RecycleViewActivity" />
         <activity android:name=".view.activity.DSBridgeActivity" />
         <activity android:name=".view.activity.WeChatActivity" />
-        <activity android:name=".view.activity.GoodsActivity"></activity>
+        <activity android:name=".view.activity.GoodsActivity" />
+        <activity android:name=".view.activity.ArActivity"></activity>
     </application>
 
 </manifest>

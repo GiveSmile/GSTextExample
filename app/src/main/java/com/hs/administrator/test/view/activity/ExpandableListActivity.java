@@ -4,7 +4,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ExpandableListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.hs.administrator.test.R;
@@ -22,6 +25,12 @@ public class ExpandableListActivity extends AppCompatActivity {
 
     @Bind(R.id.Expandable)
     ExpandableListView mExpandable;
+    @Bind(R.id.edit_byte)
+    EditText mEdByte;
+    @Bind(R.id.tv_byte)
+    TextView mTvByte;
+    @Bind(R.id.but_byte)
+    Button mButByte;
 
     private List<GroupBean> groupBeen = new ArrayList<>();
     private List<List> childList = new ArrayList<>();
@@ -34,6 +43,31 @@ public class ExpandableListActivity extends AppCompatActivity {
         initData();
         MyExAdapter mAdapter = new MyExAdapter(ExpandableListActivity.this, R.layout.item_group_exlist, R.layout.item_exlist, groupBeen, childList);
         mExpandable.setAdapter(mAdapter);
+
+        mButByte.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               String byteText = mEdByte.getText().toString().trim();
+                if (byteText.equals("")) {
+                    Toast.makeText(ExpandableListActivity.this, "请输入东西", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                byteText = byteText.toUpperCase();//装换为大写
+                int len = byteText.length()/2;
+                byte[] sendData = new byte[24];
+                char[] hc = byteText.toCharArray();
+                for (int i = 0;i<len;i++){
+                    int p = 2* i;
+                  //  sendData[i] = (byte) (charToByte(hc[p]) << 4 | charToByte(hc[p+1]));
+                }
+
+
+//                byte[] bytetest = byteText.getBytes();
+//                mTvByte.setText(bytetest.toString());
+
+            }
+        });
 
     }
 

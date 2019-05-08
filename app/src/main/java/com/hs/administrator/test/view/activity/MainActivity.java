@@ -31,6 +31,7 @@ import com.videoplayer.UrlInfo;
 import com.videoplayer.UrlInfoService;
 
 import java.io.File;
+import java.util.HashMap;
 import java.util.Properties;
 
 import butterknife.Bind;
@@ -103,14 +104,27 @@ public class MainActivity extends AppCompatActivity {
     TextView mTv21;
     @Bind(R.id.tv22)
     TextView mTv22;
+    @Bind(R.id.tv23)
+    TextView mTv23;
 
     private UrlInfoService mUrlInfoService;
+
+    private HashMap<String, String> map = new HashMap<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        map.put("one", "1");
+        map.put("two", "2");
+        map.put("three", "3");
+
+        for (String key : map.keySet()) {
+            Log.d("testHashMap", key);
+        }
+
+
         initOnClick();
         loadPlugin(this);
         mUrlInfoService = new UrlInfoService();
@@ -389,7 +403,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, ConstraintLayoutActivity.class));
             }
         });
-
+        mTv23.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,ArActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

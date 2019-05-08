@@ -15,6 +15,8 @@ import android.widget.VideoView;
 
 import com.hs.administrator.test.R;
 
+import java.util.HashMap;
+
 public class VideoPlayerActivity extends BaseActivity{
 	private static final String TAG = "VideoPlayerActivity";
 	@ViewInject(R.id.video_play)
@@ -22,7 +24,7 @@ public class VideoPlayerActivity extends BaseActivity{
 	@ViewInject(R.id.progress_loading)
 	private ProgressBar mProgresLoading;
 	private String mUrl;
-	
+
 	@Override
 	public int getLayoutRes() {
 		return R.layout.activity_video_player;
@@ -30,6 +32,8 @@ public class VideoPlayerActivity extends BaseActivity{
 
 	@Override
 	public void init() {
+
+
 		mUrl = getIntent().getStringExtra(ConstData.IntentKey.VIDEO_URL);
 		if(TextUtils.isEmpty(mUrl))
 			finish();
