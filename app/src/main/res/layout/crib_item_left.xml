@@ -3,9 +3,6 @@
     android:id="@+id/completeCommand"
     android:layout_width="150dp"
     android:layout_height="20dp"
-    android:layout_marginTop="30dp"
-    android:layout_marginLeft="20dp"
-
     android:background="@mipmap/moneybag">
 
     <TextView

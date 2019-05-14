@@ -36,45 +36,41 @@ public class StackOneAdapter extends ArrayAdapter {
     @Override
     public View getView(int position, final View convertView, final ViewGroup parent) {
 
-        View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.crib_item_one, parent, false);
-        if (mData.get(position).getType() == 1) {
-            setLeftIcon(view, position, 3);
+        View view = convertView;
+        switch (position) {
+            case 0:
+                view = LayoutInflater.from(parent.getContext())
+                        .inflate(R.layout.crib_item_one, parent, false);
 
-        } else {
-            setLeftIcon(view, position);
+                break;
+            case 1:
+                view = LayoutInflater.from(parent.getContext())
+                        .inflate(R.layout.crib_item_two, parent, false);
+
+                break;
+            case 2:
+                view = LayoutInflater.from(parent.getContext())
+                        .inflate(R.layout.crib_item_three, parent, false);
+                break;
+            case 3:
+                view = LayoutInflater.from(parent.getContext())
+                        .inflate(R.layout.crib_item_four, parent, false);
+
+                break;
+            case 4:
+                view = LayoutInflater.from(parent.getContext())
+                        .inflate(R.layout.crib_item_five, parent, false);
+                break;
         }
-//        switch (position) {
-//            case 0:
-//                view = LayoutInflater.from(parent.getContext())
-//                        .inflate(R.layout.crib_item_one, parent, false);
-//
-//                break;
-//            case 1:
-//                view = LayoutInflater.from(parent.getContext())
-//                        .inflate(R.layout.crib_item_two, parent, false);
-//
-//                break;
-//            case 2:
-//                view = LayoutInflater.from(parent.getContext())
-//                        .inflate(R.layout.crib_item_three, parent, false);
-//                break;
-//            case 3:
-//                view = LayoutInflater.from(parent.getContext())
-//                        .inflate(R.layout.crib_item_four, parent, false);
-//
-//                break;
-//            case 4:
-//                view = LayoutInflater.from(parent.getContext())
-//                        .inflate(R.layout.crib_item_five, parent, false);
-//                break;
-//        }
 
 
 //        final String name = (String) getItem(position);
         String name = mData.get(position).getContent();
         ((TextView) view.findViewById(R.id.name)).setText(name);
+        if (mData.get(position).getType() == 1) {
+            setLeftIcon(view, position);
 
+        }
 
         final View completeView = view.findViewById(R.id.completeCommand);
         completeView.setOnClickListener(new View.OnClickListener() {
@@ -96,18 +92,10 @@ public class StackOneAdapter extends ArrayAdapter {
      *
      * @param img
      */
-    private void setLeftIcon(View img, int i, int size) {
-        int marginTop = i * 10 + size;
-        ViewGroup.MarginLayoutParams margin = new ViewGroup.MarginLayoutParams(img.getLayoutParams());
-        margin.rightMargin = DensityUtil.dip2px(context, size * 2);
-        margin.topMargin = DensityUtil.dip2px(context, marginTop);
-        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(margin);
-        img.setLayoutParams(layoutParams);
-    }
     private void setLeftIcon(View img, int i) {
         int marginTop = i * 10 ;
         ViewGroup.MarginLayoutParams margin = new ViewGroup.MarginLayoutParams(img.getLayoutParams());
-//        margin.rightMargin = DensityUtil.dip2px(context, size * 2);
+        margin.rightMargin = DensityUtil.dip2px(context, 6);
         margin.topMargin = DensityUtil.dip2px(context, marginTop);
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(margin);
         img.setLayoutParams(layoutParams);

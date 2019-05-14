@@ -29,7 +29,7 @@ public class StackAdapter extends ArrayAdapter {
     private Context context;
 
     public StackAdapter(Context context) {
-        super(context, R.layout.crib_item_one);
+        super(context, R.layout.crib_item_left);
         this.context = context;
     }
 
@@ -42,7 +42,7 @@ public class StackAdapter extends ArrayAdapter {
     public View getView(int position, final View convertView, final ViewGroup parent) {
 
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.crib_item_one, parent, false);
+                .inflate(R.layout.crib_item_left, parent, false);
 
         String name = mData.get(position).getContent();
         ((TextView) view.findViewById(R.id.name)).setText(name);
@@ -73,7 +73,7 @@ public class StackAdapter extends ArrayAdapter {
      * @param img
      */
     private void setLeftIcon(View img, int i, int size) {
-        int marginTop = i * 10 + size;
+        int marginTop = i * 10 ;
         ViewGroup.MarginLayoutParams margin = new ViewGroup.MarginLayoutParams(img.getLayoutParams());
         margin.leftMargin = DensityUtil.dip2px(context, size * 2);
         margin.topMargin = DensityUtil.dip2px(context, marginTop);
