@@ -29,8 +29,6 @@ import com.hs.administrator.test.view.fragment.TwoFragment;
 import com.hs.administrator.test.view.fragment.oneFragment;
 import com.hs.administrator.test.widget.CustomHanTextView;
 import com.hs.administrator.test.widget.ShineTextView;
-import com.hs.hstechsdklibrary.xtablayout.XTabLayout;
-
 import java.io.IOException;
 import java.sql.Time;
 import java.text.SimpleDateFormat;
@@ -53,7 +51,7 @@ public class Main5Activity extends AppCompatActivity {
     private String TAG;
     private ShineTextView mBut;
     private TextView mTestShine, mTest;
-    private XTabLayout mXTabLayout;
+   // private XTabLayout mXTabLayout;
     private ViewPager mVpAllOrder;
     private WindowManager windowManager;
 
@@ -77,7 +75,7 @@ public class Main5Activity extends AppCompatActivity {
         mBut = (ShineTextView) findViewById(R.id.but);
         mTestShine = (TextView) findViewById(R.id.tv_test_shine);
         mTest = (TextView) findViewById(R.id.tv_test);
-        mXTabLayout = findViewById(R.id.test_XTabLayout);
+      //  mXTabLayout = findViewById(R.id.test_XTabLayout);
         mVpAllOrder = findViewById(R.id.mVp);
         //用calenadr获取当前时间
         Calendar calendar = Calendar.getInstance();
@@ -278,7 +276,7 @@ public class Main5Activity extends AppCompatActivity {
 
         mAccountPagerAdapter = new AccountPagerAdapter(getSupportFragmentManager(), mFragment, mTitles);
         mVpAllOrder.setAdapter(mAccountPagerAdapter);//设置Adapter
-        mXTabLayout.setupWithViewPager(mVpAllOrder);
+        //mXTabLayout.setupWithViewPager(mVpAllOrder);
     }
 
     @Override

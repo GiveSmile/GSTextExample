@@ -88,6 +88,8 @@ allprojects {
 }
 
 dependencies {
+    implementation 'com.android.support:recyclerview-v7:27.+'
+
 
     //   implementation project(':autosize')
     compile fileTree(include: ['*.jar'], dir: 'libs')
@@ -166,7 +168,7 @@ dependencies {
     //  implementation 'cat.ereza:customactivityoncrash:2.2.0'
 
     //   implementation 'com.androidkun:XTabLayout:1.0.6'
-    implementation 'com.hs.hstechsdk:hstechsdklibrary:1.2.4'
+    //implementation 'com.hs.hstechsdk:hstechsdklibrary:1.2.4'
 
     //更新
 

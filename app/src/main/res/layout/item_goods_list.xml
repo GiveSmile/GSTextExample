@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/dp_2"
                 android:text="￥"
-                android:textColor="@color/red"
+                android:textColor="#ff464e"
                 android:textSize="@dimen/sp_12"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"/>
@@ -64,7 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="99999"
-                android:textColor="@color/red"
+                android:textColor="#ff464e"
                 android:textSize="@dimen/sp_18"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@id/id_yang"/>

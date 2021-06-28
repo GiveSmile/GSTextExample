@@ -5,8 +5,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.widget.ListView;
 
-import com.hs.hstechsdklibrary.baseadapter.BaseRecylerAdapter;
-import com.hs.hstechsdklibrary.baseadapter.BaseRecylerViewHolder;
 
 import java.util.List;
 

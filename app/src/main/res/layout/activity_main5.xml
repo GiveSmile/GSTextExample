@@ -78,7 +78,7 @@
             android:layout_marginBottom="20dp"
             android:text="dsafasdfasdfa"/>
 
-    <com.hs.hstechsdklibrary.xtablayout.XTabLayout
+<!--    <com.hs.hstechsdklibrary.xtablayout.XTabLayout
             android:id="@+id/test_XTabLayout"
             android:layout_width="match_parent"
             android:layout_height="38dp"
@@ -89,7 +89,7 @@
             app:xTabIndicatorWidth="45dp"
             app:xTabMode="fixed"
             app:xTabSelectedTextColor="#ff464e"
-      />
+      />-->
         <android.support.v4.view.ViewPager
             android:id="@+id/mVp"
             android:background="#ffffff"

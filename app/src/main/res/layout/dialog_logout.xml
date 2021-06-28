@@ -18,7 +18,7 @@
             android:layout_height="35dp"
             android:gravity="bottom|center_horizontal"
             android:singleLine="true"
-            android:textColor="@color/black"
+            android:textColor="#999999"
             android:textSize="18dp"
             android:text="温馨提示"
             />
@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="1px"
             android:layout_above="@+id/ll_button_view"
-            android:background="@color/viewfinder_mask" />
+            android:background="#999999" />
 
         <LinearLayout
             android:id="@+id/ll_button_view"
@@ -69,7 +69,7 @@
                 android:id="@+id/view"
                 android:layout_width="1px"
                 android:layout_height="match_parent"
-                android:background="@color/viewfinder_mask" />
+                android:background="#999999" />
 
             <Button
                 android:id="@+id/but_right"
